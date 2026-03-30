@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Driver Panel</title>
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/rides.js"></script>
+</head>
 
+<body>
+
+<h1>Driver Dashboard</h1>
+
+<div class="driver-panel">
+
+    <h2>Available Ride Requests</h2>
+
+    <div id="rideRequests"></div>
+
+</div>
+
+</body>
+</html>
