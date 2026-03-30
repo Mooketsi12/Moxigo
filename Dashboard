@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moxido Dashboard</title>
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/app.js"></script>
+<script defer src="js/map.js"></script>
+</head>
 
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>MOXIDO</h2>
+    <ul>
+        <li onclick="navigate('index.html')">🏠 Home</li>
+        <li onclick="navigate('rides.html')">🚗 My Rides</li>
+        <li onclick="navigate('driver.html')">🧑‍✈️ Driver Mode</li>
+        <li onclick="openSettings()">⚙ Settings</li>
+        <li onclick="logout()">🚪 Logout</li>
+    </ul>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <h1>Passenger Dashboard</h1>
+        <div class="profile">👤 User</div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-container">
+        <div id="map">Loading Botswana Map...</div>
+    </div>
+
+    <!-- BOOK RIDE -->
+    <div class="ride-form">
+
+        <h2>Request a Ride</h2>
+
+        <input type="text" placeholder="Pickup Location" id="pickup">
+        <input type="text" placeholder="Drop-off Location" id="dropoff">
+
+        <div class="fare-box">
+            <label>Your Offer (Pula)</label>
+            <input type="number" id="fare">
+        </div>
+
+        <div class="ride-types">
+            <button class="ride-btn">Economy</button>
+            <button class="ride-btn">Comfort</button>
+            <button class="ride-btn">Luxury</button>
+        </div>
+
+        <button class="request-btn" onclick="requestRide()">🚀 Request Ride</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
