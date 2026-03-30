@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ride Stats</title>
+<link rel="stylesheet" href="css/styles.css">
+<script defer src="js/rides.js"></script>
+</head>
 
+<body>
+
+<h1>Your Ride History</h1>
+
+<div class="stats">
+    <div class="card">Total Rides: <span id="totalRides">0</span></div>
+    <div class="card">Money Spent: P<span id="moneySpent">0</span></div>
+    <div class="card">Avg Fare: P<span id="avgFare">0</span></div>
+</div>
+
+<div id="history"></div>
+
+</body>
+</html>
